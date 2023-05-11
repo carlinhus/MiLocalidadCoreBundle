@@ -1,0 +1,27 @@
+
+{
+  "name": "MiLocalidad/CoreBundle",
+  "description": "Just a test package",
+  "require": {
+    "php": "^8.2",
+    "symfony/symfony": "^6.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "ASchmelyun\\MyPackage\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true ,
+
+  "autoload": {
+    "psr-4": {
+      "MiLocalidad\\CoreBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MiLocalidad\\CoreBuncle\\Tests\\": "tests/"
+    }
+  }
+}
