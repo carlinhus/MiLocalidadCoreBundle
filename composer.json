@@ -4,22 +4,15 @@
   "type": "symfony-bundle",
   "description": "Mi Localidad Core Bundle",
   "require": {
-    "php": "^8.2",
-    "symfony/symfony": "^6.2"
+    "php": "^8.2"
   },
-  "autoload": {
-    "psr-4": {
-      "MiLocalidad\\\\CoreBundle\\": "src/"
-    }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true ,
-
   "autoload": {
     "psr-4": {
       "MiLocalidad\\CoreBundle\\": "src/"
     }
   },
+  "minimum-stability": "dev",
+  "prefer-stable": true ,
   "autoload-dev": {
     "psr-4": {
       "MiLocalidad\\CoreBuncle\\Tests\\": "tests/"
@@ -31,6 +24,5 @@
     },
     "sort-packages": true
   },
-  "license": "private",
-  "minimum-stability": "dev"
+  "license": "private"
 }
