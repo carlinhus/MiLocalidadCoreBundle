@@ -1,14 +1,15 @@
 
 {
-  "name": "MiLocalidad/CoreBundle",
-  "description": "Just a test package",
+  "name": "milocalidad/core-bundle",
+  "type": "symfony-bundle",
+  "description": "Mi Localidad Core Bundle",
   "require": {
     "php": "^8.2",
     "symfony/symfony": "^6.2"
   },
   "autoload": {
     "psr-4": {
-      "ASchmelyun\\MyPackage\\": "src/"
+      "MiLocalidad\\\\CoreBundle\\": "src/"
     }
   },
   "minimum-stability": "dev",
@@ -23,5 +24,13 @@
     "psr-4": {
       "MiLocalidad\\CoreBuncle\\Tests\\": "tests/"
     }
-  }
+  },
+  "config": {
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
+  },
+  "license": "private",
+  "minimum-stability": "dev"
 }
