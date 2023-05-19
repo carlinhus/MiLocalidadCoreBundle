@@ -1,10 +1,10 @@
-
 {
   "name": "milocalidad/core-bundle",
   "type": "symfony-bundle",
   "description": "Mi Localidad Core Bundle",
   "require": {
-    "php": "^8.2"
+    "php": "^8.2",
+    "symfony/console": "^6.2"
   },
   "autoload": {
     "psr-4": {
