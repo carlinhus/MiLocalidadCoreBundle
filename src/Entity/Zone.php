@@ -3,7 +3,7 @@
 namespace MiLocalidad\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use MiLocalidad\Repository\MiLocalidad\Corebundle\Entity\ZoneRepository;
+use MiLocalidad\Corebundle\Repository\ZoneRepository;
 
 #[ORM\Entity(repositoryClass: ZoneRepository::class)]
 class Zone
