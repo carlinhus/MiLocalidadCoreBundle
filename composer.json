@@ -19,9 +19,6 @@
       "MiLocalidad\\CoreBuncle\\Tests\\": "tests/"
     }
   },
-  "conflict": {
-    "symfony/symfony": "*"
-  },
   "config": {
     "preferred-install": {
       "*": "dist"
