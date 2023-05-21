@@ -4,7 +4,7 @@
   "description": "Mi Localidad Core Bundle",
   "require": {
     "php": "^8.2",
-    "symfony/console": "^6.2",
+    "symfony/console": "^6.2"
   },
   "autoload": {
     "psr-4": {
