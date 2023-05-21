@@ -1,9 +1,9 @@
 <?php
 
-namespace MiLocalidad\CoreBundle\src\Entity;
+namespace MiLocalidad\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use MiLocalidad\CoreBundle\Entity\ZoneRepository;
+use MiLocalidad\Repository\MiLocalidad\Corebundle\Entity\ZoneRepository;
 
 #[ORM\Entity(repositoryClass: ZoneRepository::class)]
 class Zone
@@ -20,7 +20,7 @@ class Zone
     private ?string $slug = null;
 
     #[ORM\Column]
-    private ?int $reference = null;
+    private ?int $externalId = null;
 
     public function getId(): ?int
     {
@@ -51,14 +51,14 @@ class Zone
         return $this;
     }
 
-    public function getReference(): ?int
+    public function getExternalId(): ?int
     {
-        return $this->reference;
+        return $this->externalId;
     }
 
-    public function setReference(int $reference): self
+    public function setExternalId(int $externalId): self
     {
-        $this->reference = $reference;
+        $this->externalId = $externalId;
 
         return $this;
     }

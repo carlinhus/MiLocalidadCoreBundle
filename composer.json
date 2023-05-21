@@ -4,7 +4,10 @@
   "description": "Mi Localidad Core Bundle",
   "require": {
     "php": "^8.2",
-    "symfony/console": "^6.2"
+    "doctrine/doctrine-bundle": "^2.9",
+    "symfony/console": "*",
+    "symfony/framework-bundle": "*",
+    "symfony/runtime": "^6.2"
   },
   "autoload": {
     "psr-4": {
@@ -22,7 +25,16 @@
     "preferred-install": {
       "*": "dist"
     },
-    "sort-packages": true
+    "sort-packages": true,
+    "allow-plugins": {
+      "symfony/runtime": true
+    }
+  },
+  "extra": {
+    "symfony": {
+      "allow-contrib": false,
+      "require": "6.2.*"
+    }
   },
   "license": "private",
   "require-dev": {
