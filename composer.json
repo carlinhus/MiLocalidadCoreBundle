@@ -5,9 +5,11 @@
   "require": {
     "php": "^8.2",
     "doctrine/doctrine-bundle": "^2.9",
+    "doctrine/orm": "^2.15",
     "symfony/console": "*",
     "symfony/framework-bundle": "*",
-    "symfony/runtime": "^6.2"
+    "symfony/runtime": "^6.2",
+    "symfony/uid": "^6.2"
   },
   "autoload": {
     "psr-4": {

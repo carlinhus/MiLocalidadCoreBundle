@@ -38,6 +38,10 @@ class ZoneRepository extends ServiceEntityRepository
             $this->getEntityManager()->flush();
         }
     }
+    public function test() : void
+    {
+        echo "heyyyy";
+    }
 
 //    /**
 //     * @return Zone[] Returns an array of Zone objects
