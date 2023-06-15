@@ -3,11 +3,11 @@
 namespace MiLocalidad\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use MiLocalidad\Repository\TownRepository;
 use Symfony\Bridge\Doctrine\Types\UuidType;
 use Symfony\Component\Uid\Uuid;
+use MiLocalidad\CoreBundle\Repository\TownRepository;
 
-#[ORM\Entity]
+#[ORM\Entity(repositoryClass: TownRepository::class)]
 class Town
 {
     #[ORM\Id]
