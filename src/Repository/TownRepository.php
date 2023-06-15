@@ -15,7 +15,7 @@ final class TownRepository extends EntityRepository
             ->getQuery()
             ->getResult();
         $res = array_map(function($value): array {
-            return [$value->getId() . $value->getName()];
+            return [$value->getId(), $value->getName(), $value->getZone()->getName()];
         }, $res);
         return $res ?: [];
     }
